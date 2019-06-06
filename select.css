@@ -1,0 +1,15 @@
+.list{
+    font-size: 25px;
+    font-weight: bold;
+}
+.select a{
+    font-size: 20px;
+    color: blue;
+}
+.field{
+    text-align: center;
+    width:800px;
+    background-color: rgb(127, 226, 103);
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+}

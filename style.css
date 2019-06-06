@@ -1,0 +1,54 @@
+.form{
+    text-align: center;
+}
+.field{
+    text-align: center;
+    width:700px;
+    height: 500px;
+    background-color: rgba(77, 126, 113, 0.644);
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+}
+.jumbotron{
+    text-align: center;
+}
+.jumbotron input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+    border-radius: 4px;
+}
+.text{
+    font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+.legend{
+    font-size: 30px;
+    font-weight: bold;
+}
+.button{
+    font-size: 20px;
+    border-bottom: 0.1875em solid #1B5E20;
+    background-color: #4CAF50;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.8em 2em;
+    margin: 0 0 1em;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+.button:hover{
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
+}
