@@ -13,3 +13,7 @@
     border: solid 3px #6091d3;
     border-radius: 10px;
 }
+/* menu.php */
+.navbar-brand{
+  font-weight: bold;
+}

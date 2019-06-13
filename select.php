@@ -1,10 +1,10 @@
 <?php
-// DB接続
-try {
-$pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
-} catch (PDOException $e) {
-  exit('データベースに接続できませんでした。'.$e->getMessage());
-}
+session_start();
+
+include "funcs.php";
+chkSsid();
+$pdo = db_con();
+
 
 //データ表示SQL作成
 $stmt = $pdo->prepare("SELECT*FROM gs_bm_table");
@@ -41,6 +41,9 @@ if($status==false) {
     <link rel="stylesheet" href="select.css">
 </head>
 <body>
+<header>
+<?php include("menu.php"); ?>
+</header>
 <fieldset class="field">
 <div class="list">データ一覧</div>
 <div>

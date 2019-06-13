@@ -1,0 +1,52 @@
+fieldset{
+    width:400px;
+    margin:0 auto;
+    margin-top:8px;
+    margin-bottom:2%;
+    transition:opacity 1s;
+    -webkit-transition:opacity 1s;
+  }
+  form{
+    background:#f0f0f0;
+    padding:6% 4%;
+  }
+.login{
+    width: 428px;
+    background:#004A3E;
+    padding:20px 0;
+    font-size:140%;
+    font-weight:300;
+    text-align:center;
+    color:#fff;
+}
+input[type="text"]{
+    width:380px;
+    margin-bottom:4%;
+    border:1px solid #ccc;
+    padding:4% 4% 4% 4%;
+    font-family:'Open Sans',sans-serif;
+    font-size:95%;
+    color:#555;
+  }
+input[type="password"]{
+    width:380px;
+    height:20px;
+    margin-bottom:4%;
+    border:1px solid #ccc;
+    padding:4% 4% 4% 4%;
+    font-family:'Open Sans',sans-serif;
+    font-size:95%;
+    color:#555;
+  }
+.submit{
+    width: 428px;
+    background:#004A3E;
+    border:10;
+    padding:15px;
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+}
+.submit:hover{
+    background:#53B9A8;
+  }

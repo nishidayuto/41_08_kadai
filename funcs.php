@@ -22,4 +22,17 @@ function redirect($page){
 function sqlError($stmt){ 
     $error = $stmt->errorInfo();
     exit("ErrorSQL:".$error[2]);
-  }
+}
+
+// ログイン認証
+function chkSsid(){
+    if(
+        !isset($_SESSION["chk_ssid"])||
+        $_SESSION["chk_ssid"] != session_id()
+      ){
+        exit("Login:Error!");
+      }else{
+        session_regenerate_id(true);
+        $_SESSION["chk_ssid"] = session_id();
+      }
+}

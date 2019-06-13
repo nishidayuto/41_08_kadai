@@ -52,3 +52,6 @@
     border-bottom-color: transparent;
     transform: translateY(0.1875em);
 }
+.navbar-brand{
+    font-weight: bold;
+  }
