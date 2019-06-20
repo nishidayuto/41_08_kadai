@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form method="post" action="insert.php" class="form">
+<form method="post" action="insert.php" class="form" enctype="multipart/form-data">
   <div class="jumbotron">
    <fieldset class="field">
     <legend class="legend">ブックマーク</legend>
      <label><input type="text" name="bookname" placeholder="書籍名"></label><br>
      <label><input type="text" name="bookurl" placeholder="書籍URL"></label><br>
      <label><textArea name="bookcomment" rows="4" cols="40" placeholder="書籍コメント" class="text"></textArea></label><br>
+     <input type="file" name="upfile">
      <input type="submit" value="送信" class="button">
     </fieldset>
   </div>

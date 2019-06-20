@@ -2,12 +2,16 @@
 session_start();
 
 include "funcs.php";
-chkSsid();
+
+// 検索キーワード
+$s = $_POST["s"];
+
 $pdo = db_con();
 
 
 //データ表示SQL作成
-$stmt = $pdo->prepare("SELECT*FROM gs_bm_table");
+$stmt = $pdo->prepare("SELECT*FROM gs_bm_table WHERE bookname LIKE :s");
+$stmt->bindValue(":s", '%'.$s.'%');
 $status = $stmt->execute();
 
 //データ表示
@@ -31,15 +35,15 @@ if($status==false) {
 }
 ?>
 
-<!-- html -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>データ表示</title>
-    <link rel="stylesheet" href="select.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>データ表示</title>
+  <link rel="stylesheet" href="select.css">
 </head>
 <body>
 <header>
@@ -51,23 +55,5 @@ if($status==false) {
 <button id="btn">検索</button>
 <div class="select"><?=$view?></div>
 </fieldset>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script>
-        document.querySelector("#btn").onclick = function() {
-            $.ajax({
-                type: "post",
-                url: "select.1.php",
-                data: {
-                    s: $("#s").val() 
-                },
-                dataType: "html",
-                success: function(data) {
-                  $("#view").html(data);
-                }
-            });
-        }
-    </script>
-
 </body>
 </html>
