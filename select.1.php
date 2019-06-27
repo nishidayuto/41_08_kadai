@@ -36,7 +36,7 @@ if($status==false) {
 ?>
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -56,4 +56,4 @@ if($status==false) {
 <div class="select"><?=$view?></div>
 </fieldset>
 </body>
-</html>
+</html> -->

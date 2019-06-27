@@ -51,7 +51,7 @@ if($status==false) {
 <button id="btn">検索</button>
 <div class="select"><?=$view?></div>
 </fieldset>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
         document.querySelector("#btn").onclick = function() {
