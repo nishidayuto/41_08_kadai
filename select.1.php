@@ -32,6 +32,7 @@ if($status==false) {
     $view .='</a>';
     $view .='</p>';
   }
+  echo $view;
 }
 ?>
 
